@@ -1,0 +1,18 @@
+<MainWindow>: #GridLayout
+
+	def __init__(self, **kwargs):
+		super(MainWindow,self).__init__(**kwargs)
+		self.cols = 2
+		#filepicker, num selected
+		#dwide "go"
+		#self.add_widget(Label(text='Pick Files'))
+		#filePickerButton = Button(text='Pick Files')
+		#fileChooser = FileChooserListView(text='Pick Files')
+		fileChooser = FileChooserIconView(text='Pick Files')
+		self.add_widget(fileChooser)
+		self.add_widget(Label(text='Number of Files Selected'))
+		#self.username = TextInput(multiline=False)
+		#self.add_widget(self.username)
+		#self.add_widget(Label(text='password'))
+		#self.password = TextInput(password=True, multiline=False)
+		#self.add_widget(self.password)
